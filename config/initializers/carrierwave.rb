@@ -6,6 +6,6 @@ CarrierWave.configure do |config|
     config.aws_credentials = {
         access_key_id:     ENV["AWS_ACCESS_KEY"],
         secret_access_key: ENV["AWS_SECRET_KEY"],
-        region:            ENV["us-east-1"]
+        region:            ENV["AWS_REGION"]
     }
 end
