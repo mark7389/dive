@@ -1,3 +1,6 @@
+@import "bootstrap";
+@import "font-awesome";
+
 .navbar {
     font-family: 'montserratregular';
     font-weight: 200;
@@ -153,4 +156,13 @@
 
   .lessons li p {
     margin: 0;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .section-li {
+    border: 1px solid;
+    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   }
