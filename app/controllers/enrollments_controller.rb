@@ -11,6 +11,7 @@ class EnrollmentsController < ApplicationController
         email: params[:stripeEmail],
         source: params[:stripeToken]
       )
+    end
 
       charge = Stripe::Charge.create(
         customer: customer.id,
