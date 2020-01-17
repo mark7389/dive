@@ -5,13 +5,13 @@ class EnrollmentsController < ApplicationController
     if current_course.premium?
       # Amount in cents
       @amount = (current_course.cost * 100).to_i
-    end
+
     
       customer = Stripe::Customer.create(
         email: params[:stripeEmail],
         source: params[:stripeToken]
       )
-    end
+ 
 
       charge = Stripe::Charge.create(
         customer: customer.id,
